@@ -1,0 +1,1 @@
+alias gld='git log --oneline --decorate'
