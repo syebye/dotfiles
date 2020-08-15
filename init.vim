@@ -19,11 +19,24 @@ Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 
 Plug 'morhetz/gruvbox'
 
+Plug 'rust-lang/rust.vim'
+Plug 'cespare/vim-toml'
+
+Plug 'majutsushi/tagbar'
+
 " Initialize plugin system
 call plug#end()
 
+" let g:gruvbox_termcolors=256
+" let g:gruvbox_contrast_dark="medium"
+
 " Colorschemes
-autocmd vimenter * colorscheme gruvbox
+" colorscheme gruvbox
+colorscheme desert
+set background=dark
 
 " Keymaps
 inoremap kj <Esc>
+
+" clipbard
+set clipboard=unnamed
