@@ -27,12 +27,12 @@ Plug 'majutsushi/tagbar'
 " Initialize plugin system
 call plug#end()
 
-" let g:gruvbox_termcolors=256
-" let g:gruvbox_contrast_dark="medium"
+let g:gruvbox_termcolors=256
+let g:gruvbox_contrast_dark="medium"
 
 " Colorschemes
-" colorscheme gruvbox
-colorscheme desert
+colorscheme gruvbox
+"colorscheme desert
 set background=dark
 
 " Keymaps
