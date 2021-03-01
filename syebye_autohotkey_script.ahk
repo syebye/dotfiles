@@ -31,17 +31,6 @@ RWin::
  }
 return
 
-!/::
- if (toggle=1) {
-  toggle=0
-  SetCapsLockState, Off
- }
- else {
-  toggle=1
-  SetCapsLockState, On
- }
-Return
-
 #If (numkey_toggle=1)
 Space::Send,{Numpad0}
 m::Send,{Numpad1}
@@ -80,6 +69,7 @@ h::Send,{Left}
 +h::Send,+{Left}
 ^h::Send,^{Left}
 +^h::Send,+^{Left}
+
 u::Send,{Home}
 +u::Send,+{Home}
 ^u::Send,^{Home}
@@ -89,30 +79,23 @@ i::Send,{End}
 ^i::Send,^{End}
 +^i::Send,+^{End}
 
-#l::Send,!{Right}
-#h::Send,!{Left}
+n::Send,{PgDn}
++n::Send,+{PgDn}
+^n::Send,^{PgDn}
++^n::Send,+^{PgDn}
+m::Send,{PgUp}
++m::Send,+{PgUp}
+^m::Send,^{PgUp}
++^m::Send,+^{PgUp}
 
-!k::Send,{PgUp}
-!+k::Send,+{PgUp}
-!^k::Send,^{PgUp}
-!+^k::Send,^+{PgUp}
-!j::Send,{PgDn}
-!+j::Send,+{PgDn}
-!^j::Send,^{PgDn}
-!+^j::Send,+^{PgDn}
-!l::Send,{End}
-!+l::Send,+{End}
-!^l::Send,^{End}
-!+^l::Send,+^{End}
-!h::Send,{Home}
-!+h::Send,+{Home}
-!^h::Send,^{Home}
-!+^h::Send,+^{Home}
+c::^c
+v::^v
+x::^x
 
+o::Send,{BackSpace}
+p::Send,{Delete}
 
-m::^c
-,::^v
-.::^x
+g::AppsKey
 
 
 ;o::Send,{BackSpace}
